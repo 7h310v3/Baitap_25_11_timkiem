@@ -8,13 +8,6 @@ def taodulieu(lim, a, b):
         count += 1
     return tao
 
-def sapxep(x):
-    for i in range (0, len(x)-1):
-        for j in range (i+1, len(x)):
-            if x[i] > x[j]:
-                x[i], x[j] = x[j], x[i]
-    return x
-
 def timkiem(a, tmp):
     ketqua = []
     for i in range(0, len(a)):
@@ -34,14 +27,12 @@ def main():
     print("Ban đầu:")
     print(num)
 
-    print("Dữ liệu của mảng sau khi sắp xếp tăng dần:")
-    print(sapxep(num))
-
     n = int(input("Nhập số cần tìm kiếm:"))
-    if(timkiem(sapxep(num), n) == -1):
+    KQ = timkiem(num, n)
+    if(KQ == -1):
         print("Không có kết quả!")
     else:
-        print("Phần tử", n, "xuất hiện tại vị trí: ",timkiem(sapxep(num), n))
+        print("Phần tử", n, "xuất hiện đầu tiên tại vị trí: ",KQ[0])
 
 if __name__== "__main__":
     main()

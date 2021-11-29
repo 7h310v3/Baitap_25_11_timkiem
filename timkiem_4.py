@@ -43,8 +43,8 @@ def main():
     if(KQ == -1):
         print("Không có kết quả!")
     else:
-        print("Phần tử", n, "xuất hiện đầu tiên tại vị trí: ",KQ)
-        print("Số bước lặp bằng: ", KQ[len(KQ) - 1])
+        print("Phần tử", n, "xuất hiện tại vị trí: ",KQ)
+        print("Số bước lặp bằng: ", KQ[len(KQ) - 1]+1)
 
 if __name__== "__main__":
     main()
