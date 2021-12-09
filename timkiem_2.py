@@ -27,7 +27,7 @@ def main():
         print("Không có kết quả!")
     else:
         print("Phần tử", n, "xuất hiện đầu tiên tại vị trí: ",timkiem(num, n))
-        print("Số bước lặp bằng: ", timkiem(num, n)+1)
+        print(Số bước lặp bằng: ", timkiem(num, n)+1)
 
 if __name__== "__main__":
     main()
